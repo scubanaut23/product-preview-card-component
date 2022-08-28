@@ -1,0 +1,41 @@
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+  font-size: 14px;
+}
+
+/* 
+FONTS
+
+- Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
+- Weights: 500, 700
+
+- Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
+- Weights: 700 */
+
+/* font-family: 'Fraunces', serif;
+
+font-family: 'Montserrat', sans-serif; */
+
+body {
+  background-color: var(--cream);
+}
+
+main {
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 25%;
+  grid-column-gap: 5px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+}
