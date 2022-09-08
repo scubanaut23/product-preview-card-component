@@ -115,19 +115,19 @@ body {
   width: 10px;
 }
 
-@media (max-width: 370px) {
+@media (max-width: 300px) {
   .main-content {
+    padding: 20px;
     display: flex;
 
     align-items: center;
   }
-  .main-content_card {
-    align-items: flex-end;
-  }
+
   .main-content_image {
-    height: 60%;
+    height: 200px;
     border-radius: 0.5rem 0.5rem 0 0;
-    object-fit: fill;
+    object-fit: cover;
+    object-position: 50% 30%;
   }
   .main-content-text_content {
     align-content: flex-start;
