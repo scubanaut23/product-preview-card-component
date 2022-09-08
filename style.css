@@ -25,26 +25,28 @@ font-family: 'Montserrat', sans-serif; */
 body {
   background-color: var(--cream);
   display: flex;
+
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
 .main-content {
-  max-width: 23.7rem;
-}
-
-.main-content_card {
   display: flex;
+  flex-wrap: wrap;
+  width: 25rem;
+}
+.main-content_card {
+  flex: 50%;
 }
 .main-content_image {
   border-radius: 0.5rem 0 0 0.5rem;
-  flex: 1;
-  width: 50%;
+  width: 100%;
+  height: auto;
 }
 .main-content-text_content {
   border-radius: 0rem 0.5rem 0.5rem 0rem;
-  width: 50%;
+
   display: flex;
   flex-direction: column;
   background-color: var(--white);
@@ -114,17 +116,24 @@ body {
 }
 
 @media (max-width: 370px) {
-  .main-content_card {
-    flex-direction: column;
+  .main-content {
+    display: flex;
+
     align-items: center;
   }
+  .main-content_card {
+    align-items: flex-end;
+  }
   .main-content_image {
+    height: 60%;
     border-radius: 0.5rem 0.5rem 0 0;
-    flex: 1 30%;
-
-    object-fit: contain;
+    object-fit: fill;
   }
   .main-content-text_content {
+    align-content: flex-start;
     border-radius: 0rem 0rem 0.5rem 0.5rem;
+  }
+  .cart {
+    margin-bottom: 10px;
   }
 }
